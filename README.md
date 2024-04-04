@@ -1,56 +1,54 @@
 # Multiplication Table Generator
 
-This Bash script is designed to generate multiplication tables based on user input and preferences. It allows users to choose between generating a full multiplication table (1 to 10) or a partial multiplication table within a specified range. Additionally, users can choose to display the table in ascending or descending order.
+## Overview
 
-## How to Use
+This project serves as a practical application of Bash scripting fundamentals, emphasizing loops, conditional logic, and user interaction. By completing this task, you'll enhance your skills in automating tasks and improving your scripting proficiency.
 
-1. **Run the Script:**
+## Objective
 
-   - Make sure you have Bash installed on your system.
-   - Open a terminal and navigate to the directory containing the script (`multiplication_tab_gen.sh`).
-   - Run the script using the command `./multiplication_tab_gen.sh`.
+The objective of this Bash script is to generate a multiplication table for a given number. The script prompts the user to enter a number and then displays the multiplication table for that number up to 10. It utilizes both styles of For Loops: the list form and the C-style form.
 
-2. **Input a Positive Integer:**
+## Implementation Details
 
-   - You will be prompted to enter a positive integer for which you want to generate the multiplication table.
+### Part 1: Using List Form For Loop
 
-3. **Choose an Option:**
+1. **Prompt the User:**
 
-   - After entering the integer, you will see the following options:
-     - **1:** Generate a full multiplication table (1 to 10).
-     - **2:** Generate a partial multiplication table within a specified range.
-     - **3:** Exit the program.
+   - The script asks the user to input a number using the `read` command and captures this input into a variable.
 
-4. **Generate Multiplication Table:**
+2. **Generate Multiplication Table:**
+   - Utilizes a list form for loop to iterate through the numbers 1 to 10.
+   - In each iteration, calculates the product of the user's number and the iterator variable, then prints the result in a clear format.
 
-   - If you choose option **1**, the script will display the full multiplication table for the entered number.
-   - If you choose option **2**, you will be asked to enter the start and end of the range for the partial multiplication table.
+Example output for a number:
 
-5. **Specify Ascending or Descending Order:**
-
-   - After generating the multiplication table, you will be prompted to choose whether you want to see the table in ascending (a) or descending (d) order.
-
-6. **View the Table:**
-
-   - Based on your choice, the script will display the multiplication table in the specified order.
-
-7. **Continue or Exit:**
-   - You can continue generating tables by following the prompts, or choose option **3** to exit the program.
-
-## Example Usage
-
-```bash
-./multiplication_tab_gen.sh
+```
+Enter a number: 3
+3 x 1 = 3
+3 x 2 = 6
+...
+3 x 10 = 30
 ```
 
-1. Enter `5` as the positive integer.
-2. Choose option `1` for a full multiplication table.
-3. Select option `a` for ascending order.
-4. View the generated table.
+### Part 2: Using C-style For Loop
+
+1. **Repeat the Prompt:**
+
+   - Proceeds with the C-style loop using the same variable without asking the user again.
+
+2. **Generate Multiplication Table with C-style Loop:**
+   - Writes a C-style for loop to achieve the same task as in Part 1.
+   - Compares how this approach differs from the list form loop in terms of syntax and clarity.
+
+## Guidelines
+
+- Ensure the output is user-friendly and clearly formatted.
+- Comment your code to explain which part is using the list form and which part is using the C-style.
+- Ask the user if they want to see the table in ascending or descending order, and implement this feature using if-else statements combined with your loop of choice.
 
 ## Author
 
-This Multiplication Table Generator script was authored by Bukky Oyetimehin.
+This Multiplication Table Generator script was developed as a learning exercise by [Bukky Oyetimehin].
 
 ## License
 
