@@ -7,8 +7,8 @@ This Bash script is designed to generate multiplication tables based on user inp
 1. **Run the Script:**
 
    - Make sure you have Bash installed on your system.
-   - Open a terminal and navigate to the directory containing the script (`multiplication_table_generator.sh`).
-   - Run the script using the command `./multiplication_table_generator.sh`.
+   - Open a terminal and navigate to the directory containing the script (`multiplication_tab_gen.sh`).
+   - Run the script using the command `./multiplication_tab_gen.sh`.
 
 2. **Input a Positive Integer:**
 
@@ -40,7 +40,7 @@ This Bash script is designed to generate multiplication tables based on user inp
 ## Example Usage
 
 ```bash
-./multiplication_table_generator.sh
+./multiplication_tab_gen.sh
 ```
 
 1. Enter `5` as the positive integer.
